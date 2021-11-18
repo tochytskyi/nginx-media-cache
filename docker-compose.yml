@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  nginx:
+    image: nginx_media_cache
+    container_name: nginx_media_cache
+    build:
+      context: .
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      #- ./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro
+      - ./images:/var/www/images
+    ports:
+      - "8088:80"
