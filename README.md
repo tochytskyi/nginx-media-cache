@@ -14,6 +14,6 @@ Tuning nginx to cache media files
 Check header `X-Cache-Status: BYPASS`
 ![X-Cache-Status: BYPASS](readme/postman_example_2.png)
 
-### Get an image more than 1 time
+### Get an image more than 2 times
 Check header `X-Cache-Status: HIT`
 ![X-Cache-Status: HIT](readme/postman_example_1.png)
