@@ -8,6 +8,7 @@ services:
       context: .
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./cgi/remove-file-cache.cgi:/usr/lib/cgi-bin/remove-file-cache.cgi
       #- ./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro
       - ./images:/var/www/images
     ports:
